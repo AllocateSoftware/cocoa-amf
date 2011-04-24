@@ -51,7 +51,8 @@ typedef enum _AMF3Type
 	kAMF3ArrayType = 0x9,
 	kAMF3ObjectType = 0xA,
 	kAMF3XMLType = 0xB,
-	kAMF3ByteArrayType = 0xC
+	kAMF3ByteArrayType = 0xC,
+    kDictionaryType = 0x11
 } AMF3Type;
 
 enum

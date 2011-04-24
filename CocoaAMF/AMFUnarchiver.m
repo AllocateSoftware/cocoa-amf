@@ -929,7 +929,12 @@ static uint16_t g_options = 0;
 		case kAMF3ByteArrayType:
 			value = [self _decodeByteArray];
 			break;
-			
+		
+        case kDictionaryType:
+            [self _cannotDecodeType:"Don't support dictionary type"];
+			break;
+
+            
 		default:
 			[self _cannotDecodeType:"Unknown type"];
 			break;
