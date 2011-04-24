@@ -499,6 +499,10 @@ static uint16_t g_options = 0;
 	ASObject *lastDeserializedObject = m_currentDeserializedObject;
 	m_currentDeserializedObject = object;
 	NSObject <NSCoding> *desObject = [cls allocWithZone:NULL];
+    
+    // NRM: Do this as early as possible!
+    [m_objectTable replaceObjectAtIndex:[m_objectTable indexOfObject:object] withObject:desObject];
+    
 	desObject = [desObject initWithCoder:self];
 	desObject = [desObject awakeAfterUsingCoder:self];
 	m_currentDeserializedObject = lastDeserializedObject;
@@ -996,7 +1000,7 @@ static uint16_t g_options = 0;
 	{
 		return [object autorelease];
 	}
-	[m_objectTable replaceObjectAtIndex:[m_objectTable indexOfObject:object] withObject:desObject];
+	//[m_objectTable replaceObjectAtIndex:[m_objectTable indexOfObject:object] withObject:desObject];
 	[object release];
 	return desObject;
 }
