@@ -17,7 +17,7 @@
 @implementation AMFRemotingCall
 
 @synthesize service=m_service, method=m_method, arguments=m_arguments, amfVersion=m_amfVersion, 
-	delegate=m_delegate;
+	delegate=m_delegate, callback=m_callback;
 
 static uint32_t g_responseCount = 1;
 
@@ -219,6 +219,12 @@ static uint32_t g_responseCount = 1;
 	{
 		AMFActionMessage *message = [[AMFActionMessage alloc] initWithData:m_receivedData];
 		NSObject *data = [[message.bodies objectAtIndex:0] data];
+        
+        if( m_callback )
+        {
+            m_callback(data);
+        }
+        
 		objc_msgSend(m_delegate, @selector(remotingCallDidFinishLoading:receivedObject:), 
 			self, data);
 		[message release];

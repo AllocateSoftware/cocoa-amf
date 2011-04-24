@@ -31,6 +31,8 @@
 	NSError *m_error;
 	NSObject <AMFRemotingCallDelegate> *m_delegate;
 	NSMutableDictionary *m_amfHeaders;
+    
+    void (^m_callback)(NSObject*);
 }
 
 @property (nonatomic, retain) NSURL *URL;
@@ -39,6 +41,7 @@
 @property (nonatomic, retain) NSObject *arguments;
 @property (nonatomic, assign) NSObject <AMFRemotingCallDelegate> *delegate;
 @property (nonatomic, assign) AMFVersion amfVersion; // AMF3 is used by default
+@property (readwrite, copy) void (^callback)(NSObject*);
 
 + (AMFRemotingCall *)remotingCallWithURL:(NSURL *)url service:(NSString *)service 
 	method:(NSString *)method arguments:(NSObject *)arguments;
