@@ -722,7 +722,7 @@ static uint16_t g_options = 0;
 	{
 		return [object autorelease];
 	}
-	[m_objectTable replaceObjectAtIndex:[m_objectTable indexOfObject:object] withObject:desObject];
+	//[m_objectTable replaceObjectAtIndex:[m_objectTable indexOfObject:object] withObject:desObject];
 	[object release];
 	return desObject;
 }
@@ -1107,6 +1107,7 @@ static uint16_t g_options = 0;
 	}
 	uint32_t length = (ref >> 1);
 	NSData *data = [self decodeBytes:length];
+    [m_objectTable addObject:data];
 	return data;
 }
 

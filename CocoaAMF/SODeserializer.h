@@ -6,7 +6,7 @@
 //  Copyright 2008 nesiumdotcom. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+//#import <Cocoa/Cocoa.h>
 #import "AMFUnarchiver.h"
 #import "AMFDebugUnarchiver.h"
 
