@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E18CE4021518D54700C3BE94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18CE4011518D54700C3BE94 /* Foundation.framework */; };
+		E18CE4471518D7E900C3BE94 /* AMF.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE42A1518D7E900C3BE94 /* AMF.h */; };
+		E18CE4481518D7E900C3BE94 /* AMF.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE42B1518D7E900C3BE94 /* AMF.m */; };
+		E18CE4491518D7E900C3BE94 /* AMFActionMessage.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE42C1518D7E900C3BE94 /* AMFActionMessage.h */; };
+		E18CE44A1518D7E900C3BE94 /* AMFActionMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE42D1518D7E900C3BE94 /* AMFActionMessage.m */; };
+		E18CE44B1518D7E900C3BE94 /* AMFArchiver.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE42E1518D7E900C3BE94 /* AMFArchiver.h */; };
+		E18CE44C1518D7E900C3BE94 /* AMFArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE42F1518D7E900C3BE94 /* AMFArchiver.m */; };
+		E18CE44D1518D7E900C3BE94 /* AMFDebugUnarchiver.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4301518D7E900C3BE94 /* AMFDebugUnarchiver.h */; };
+		E18CE44E1518D7E900C3BE94 /* AMFDebugUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4311518D7E900C3BE94 /* AMFDebugUnarchiver.m */; };
+		E18CE44F1518D7E900C3BE94 /* AMFDuplexGateway.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4321518D7E900C3BE94 /* AMFDuplexGateway.h */; };
+		E18CE4501518D7E900C3BE94 /* AMFDuplexGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4331518D7E900C3BE94 /* AMFDuplexGateway.m */; };
+		E18CE4511518D7E900C3BE94 /* AMFGateway.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4341518D7E900C3BE94 /* AMFGateway.h */; };
+		E18CE4521518D7E900C3BE94 /* AMFGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4351518D7E900C3BE94 /* AMFGateway.m */; };
+		E18CE4531518D7E900C3BE94 /* AMFRemotingCall.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4361518D7E900C3BE94 /* AMFRemotingCall.h */; };
+		E18CE4541518D7E900C3BE94 /* AMFRemotingCall.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4371518D7E900C3BE94 /* AMFRemotingCall.m */; };
+		E18CE4551518D7E900C3BE94 /* AMFUnarchiver.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4381518D7E900C3BE94 /* AMFUnarchiver.h */; };
+		E18CE4561518D7E900C3BE94 /* AMFUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4391518D7E900C3BE94 /* AMFUnarchiver.m */; };
+		E18CE4571518D7E900C3BE94 /* ASObject.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE43A1518D7E900C3BE94 /* ASObject.h */; };
+		E18CE4581518D7E900C3BE94 /* ASObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE43B1518D7E900C3BE94 /* ASObject.m */; };
+		E18CE4591518D7E900C3BE94 /* CocoaAMF.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE43C1518D7E900C3BE94 /* CocoaAMF.h */; };
+		E18CE45A1518D7E900C3BE94 /* FlexDataTypes.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE43D1518D7E900C3BE94 /* FlexDataTypes.h */; };
+		E18CE45B1518D7E900C3BE94 /* FlexDataTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE43E1518D7E900C3BE94 /* FlexDataTypes.m */; };
+		E18CE45C1518D7E900C3BE94 /* NSInvocation-AMFExtensions.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE43F1518D7E900C3BE94 /* NSInvocation-AMFExtensions.h */; };
+		E18CE45D1518D7E900C3BE94 /* NSInvocation-AMFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4401518D7E900C3BE94 /* NSInvocation-AMFExtensions.m */; };
+		E18CE45E1518D7E900C3BE94 /* NSObject-AMFExtensions.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4411518D7E900C3BE94 /* NSObject-AMFExtensions.h */; };
+		E18CE45F1518D7E900C3BE94 /* NSObject-AMFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4421518D7E900C3BE94 /* NSObject-AMFExtensions.m */; };
+		E18CE4601518D7E900C3BE94 /* NSObject-iPhoneExtensions.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4431518D7E900C3BE94 /* NSObject-iPhoneExtensions.h */; };
+		E18CE4611518D7E900C3BE94 /* NSObject-iPhoneExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4441518D7E900C3BE94 /* NSObject-iPhoneExtensions.m */; };
+		E18CE4621518D7E900C3BE94 /* SODeserializer.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4451518D7E900C3BE94 /* SODeserializer.h */; };
+		E18CE4631518D7E900C3BE94 /* SODeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE4461518D7E900C3BE94 /* SODeserializer.m */; };
+		E18CE4651518D8E000C3BE94 /* cocoa-amf-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E18CE4641518D8E000C3BE94 /* cocoa-amf-Prefix.pch */; };
+		E18CE46C1518DB3400C3BE94 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E18CE4691518DB3400C3BE94 /* AsyncSocket.h */; };
+		E18CE46D1518DB3400C3BE94 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE46A1518DB3400C3BE94 /* AsyncSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E18CE3FE1518D54700C3BE94 /* libcocoa-amf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcocoa-amf.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18CE4011518D54700C3BE94 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E18CE42A1518D7E900C3BE94 /* AMF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMF.h; path = CocoaAMF/AMF.h; sourceTree = "<group>"; };
+		E18CE42B1518D7E900C3BE94 /* AMF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMF.m; path = CocoaAMF/AMF.m; sourceTree = "<group>"; };
+		E18CE42C1518D7E900C3BE94 /* AMFActionMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMFActionMessage.h; path = CocoaAMF/AMFActionMessage.h; sourceTree = "<group>"; };
+		E18CE42D1518D7E900C3BE94 /* AMFActionMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMFActionMessage.m; path = CocoaAMF/AMFActionMessage.m; sourceTree = "<group>"; };
+		E18CE42E1518D7E900C3BE94 /* AMFArchiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMFArchiver.h; path = CocoaAMF/AMFArchiver.h; sourceTree = "<group>"; };
+		E18CE42F1518D7E900C3BE94 /* AMFArchiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMFArchiver.m; path = CocoaAMF/AMFArchiver.m; sourceTree = "<group>"; };
+		E18CE4301518D7E900C3BE94 /* AMFDebugUnarchiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMFDebugUnarchiver.h; path = CocoaAMF/AMFDebugUnarchiver.h; sourceTree = "<group>"; };
+		E18CE4311518D7E900C3BE94 /* AMFDebugUnarchiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMFDebugUnarchiver.m; path = CocoaAMF/AMFDebugUnarchiver.m; sourceTree = "<group>"; };
+		E18CE4321518D7E900C3BE94 /* AMFDuplexGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMFDuplexGateway.h; path = CocoaAMF/AMFDuplexGateway.h; sourceTree = "<group>"; };
+		E18CE4331518D7E900C3BE94 /* AMFDuplexGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMFDuplexGateway.m; path = CocoaAMF/AMFDuplexGateway.m; sourceTree = "<group>"; };
+		E18CE4341518D7E900C3BE94 /* AMFGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMFGateway.h; path = CocoaAMF/AMFGateway.h; sourceTree = "<group>"; };
+		E18CE4351518D7E900C3BE94 /* AMFGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMFGateway.m; path = CocoaAMF/AMFGateway.m; sourceTree = "<group>"; };
+		E18CE4361518D7E900C3BE94 /* AMFRemotingCall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMFRemotingCall.h; path = CocoaAMF/AMFRemotingCall.h; sourceTree = "<group>"; };
+		E18CE4371518D7E900C3BE94 /* AMFRemotingCall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMFRemotingCall.m; path = CocoaAMF/AMFRemotingCall.m; sourceTree = "<group>"; };
+		E18CE4381518D7E900C3BE94 /* AMFUnarchiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMFUnarchiver.h; path = CocoaAMF/AMFUnarchiver.h; sourceTree = "<group>"; };
+		E18CE4391518D7E900C3BE94 /* AMFUnarchiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AMFUnarchiver.m; path = CocoaAMF/AMFUnarchiver.m; sourceTree = "<group>"; };
+		E18CE43A1518D7E900C3BE94 /* ASObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ASObject.h; path = CocoaAMF/ASObject.h; sourceTree = "<group>"; };
+		E18CE43B1518D7E900C3BE94 /* ASObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ASObject.m; path = CocoaAMF/ASObject.m; sourceTree = "<group>"; };
+		E18CE43C1518D7E900C3BE94 /* CocoaAMF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CocoaAMF.h; path = CocoaAMF/CocoaAMF.h; sourceTree = "<group>"; };
+		E18CE43D1518D7E900C3BE94 /* FlexDataTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlexDataTypes.h; path = CocoaAMF/FlexDataTypes.h; sourceTree = "<group>"; };
+		E18CE43E1518D7E900C3BE94 /* FlexDataTypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlexDataTypes.m; path = CocoaAMF/FlexDataTypes.m; sourceTree = "<group>"; };
+		E18CE43F1518D7E900C3BE94 /* NSInvocation-AMFExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSInvocation-AMFExtensions.h"; path = "CocoaAMF/NSInvocation-AMFExtensions.h"; sourceTree = "<group>"; };
+		E18CE4401518D7E900C3BE94 /* NSInvocation-AMFExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation-AMFExtensions.m"; path = "CocoaAMF/NSInvocation-AMFExtensions.m"; sourceTree = "<group>"; };
+		E18CE4411518D7E900C3BE94 /* NSObject-AMFExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSObject-AMFExtensions.h"; path = "CocoaAMF/NSObject-AMFExtensions.h"; sourceTree = "<group>"; };
+		E18CE4421518D7E900C3BE94 /* NSObject-AMFExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSObject-AMFExtensions.m"; path = "CocoaAMF/NSObject-AMFExtensions.m"; sourceTree = "<group>"; };
+		E18CE4431518D7E900C3BE94 /* NSObject-iPhoneExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSObject-iPhoneExtensions.h"; path = "CocoaAMF/NSObject-iPhoneExtensions.h"; sourceTree = "<group>"; };
+		E18CE4441518D7E900C3BE94 /* NSObject-iPhoneExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSObject-iPhoneExtensions.m"; path = "CocoaAMF/NSObject-iPhoneExtensions.m"; sourceTree = "<group>"; };
+		E18CE4451518D7E900C3BE94 /* SODeserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SODeserializer.h; path = CocoaAMF/SODeserializer.h; sourceTree = "<group>"; };
+		E18CE4461518D7E900C3BE94 /* SODeserializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SODeserializer.m; path = CocoaAMF/SODeserializer.m; sourceTree = "<group>"; };
+		E18CE4641518D8E000C3BE94 /* cocoa-amf-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cocoa-amf-Prefix.pch"; sourceTree = "<group>"; };
+		E18CE4681518DB3400C3BE94 /* AsyncSocket Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "AsyncSocket Documentation.html"; sourceTree = "<group>"; };
+		E18CE4691518DB3400C3BE94 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		E18CE46A1518DB3400C3BE94 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		E18CE46B1518DB3400C3BE94 /* changes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changes.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E18CE3FB1518D54700C3BE94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18CE4021518D54700C3BE94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E18CE3F31518D54700C3BE94 = {
+			isa = PBXGroup;
+			children = (
+				E18CE4671518DB3400C3BE94 /* CocoaAsyncSocket */,
+				E18CE4641518D8E000C3BE94 /* cocoa-amf-Prefix.pch */,
+				E18CE42A1518D7E900C3BE94 /* AMF.h */,
+				E18CE42B1518D7E900C3BE94 /* AMF.m */,
+				E18CE42C1518D7E900C3BE94 /* AMFActionMessage.h */,
+				E18CE42D1518D7E900C3BE94 /* AMFActionMessage.m */,
+				E18CE42E1518D7E900C3BE94 /* AMFArchiver.h */,
+				E18CE42F1518D7E900C3BE94 /* AMFArchiver.m */,
+				E18CE4301518D7E900C3BE94 /* AMFDebugUnarchiver.h */,
+				E18CE4311518D7E900C3BE94 /* AMFDebugUnarchiver.m */,
+				E18CE4321518D7E900C3BE94 /* AMFDuplexGateway.h */,
+				E18CE4331518D7E900C3BE94 /* AMFDuplexGateway.m */,
+				E18CE4341518D7E900C3BE94 /* AMFGateway.h */,
+				E18CE4351518D7E900C3BE94 /* AMFGateway.m */,
+				E18CE4361518D7E900C3BE94 /* AMFRemotingCall.h */,
+				E18CE4371518D7E900C3BE94 /* AMFRemotingCall.m */,
+				E18CE4381518D7E900C3BE94 /* AMFUnarchiver.h */,
+				E18CE4391518D7E900C3BE94 /* AMFUnarchiver.m */,
+				E18CE43A1518D7E900C3BE94 /* ASObject.h */,
+				E18CE43B1518D7E900C3BE94 /* ASObject.m */,
+				E18CE43C1518D7E900C3BE94 /* CocoaAMF.h */,
+				E18CE43D1518D7E900C3BE94 /* FlexDataTypes.h */,
+				E18CE43E1518D7E900C3BE94 /* FlexDataTypes.m */,
+				E18CE43F1518D7E900C3BE94 /* NSInvocation-AMFExtensions.h */,
+				E18CE4401518D7E900C3BE94 /* NSInvocation-AMFExtensions.m */,
+				E18CE4411518D7E900C3BE94 /* NSObject-AMFExtensions.h */,
+				E18CE4421518D7E900C3BE94 /* NSObject-AMFExtensions.m */,
+				E18CE4431518D7E900C3BE94 /* NSObject-iPhoneExtensions.h */,
+				E18CE4441518D7E900C3BE94 /* NSObject-iPhoneExtensions.m */,
+				E18CE4451518D7E900C3BE94 /* SODeserializer.h */,
+				E18CE4461518D7E900C3BE94 /* SODeserializer.m */,
+				E18CE4001518D54700C3BE94 /* Frameworks */,
+				E18CE3FF1518D54700C3BE94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E18CE3FF1518D54700C3BE94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E18CE3FE1518D54700C3BE94 /* libcocoa-amf.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E18CE4001518D54700C3BE94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E18CE4011518D54700C3BE94 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E18CE4671518DB3400C3BE94 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				E18CE4681518DB3400C3BE94 /* AsyncSocket Documentation.html */,
+				E18CE4691518DB3400C3BE94 /* AsyncSocket.h */,
+				E18CE46A1518DB3400C3BE94 /* AsyncSocket.m */,
+				E18CE46B1518DB3400C3BE94 /* changes.txt */,
+			);
+			name = CocoaAsyncSocket;
+			path = Libraries/CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E18CE3FC1518D54700C3BE94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18CE4651518D8E000C3BE94 /* cocoa-amf-Prefix.pch in Headers */,
+				E18CE46C1518DB3400C3BE94 /* AsyncSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E18CE3FD1518D54700C3BE94 /* cocoa-amf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E18CE40B1518D54700C3BE94 /* Build configuration list for PBXNativeTarget "cocoa-amf" */;
+			buildPhases = (
+				E18CE3FA1518D54700C3BE94 /* Sources */,
+				E18CE3FB1518D54700C3BE94 /* Frameworks */,
+				E18CE3FC1518D54700C3BE94 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cocoa-amf";
+			productName = "cocoa-amf";
+			productReference = E18CE3FE1518D54700C3BE94 /* libcocoa-amf.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E18CE3F51518D54700C3BE94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Nirima;
+			};
+			buildConfigurationList = E18CE3F81518D54700C3BE94 /* Build configuration list for PBXProject "cocoa-amf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E18CE3F31518D54700C3BE94;
+			productRefGroup = E18CE3FF1518D54700C3BE94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E18CE3FD1518D54700C3BE94 /* cocoa-amf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E18CE3FA1518D54700C3BE94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18CE4471518D7E900C3BE94 /* AMF.h in Sources */,
+				E18CE4481518D7E900C3BE94 /* AMF.m in Sources */,
+				E18CE4491518D7E900C3BE94 /* AMFActionMessage.h in Sources */,
+				E18CE44A1518D7E900C3BE94 /* AMFActionMessage.m in Sources */,
+				E18CE44B1518D7E900C3BE94 /* AMFArchiver.h in Sources */,
+				E18CE44C1518D7E900C3BE94 /* AMFArchiver.m in Sources */,
+				E18CE44D1518D7E900C3BE94 /* AMFDebugUnarchiver.h in Sources */,
+				E18CE44E1518D7E900C3BE94 /* AMFDebugUnarchiver.m in Sources */,
+				E18CE44F1518D7E900C3BE94 /* AMFDuplexGateway.h in Sources */,
+				E18CE4501518D7E900C3BE94 /* AMFDuplexGateway.m in Sources */,
+				E18CE4511518D7E900C3BE94 /* AMFGateway.h in Sources */,
+				E18CE4521518D7E900C3BE94 /* AMFGateway.m in Sources */,
+				E18CE4531518D7E900C3BE94 /* AMFRemotingCall.h in Sources */,
+				E18CE4541518D7E900C3BE94 /* AMFRemotingCall.m in Sources */,
+				E18CE4551518D7E900C3BE94 /* AMFUnarchiver.h in Sources */,
+				E18CE4561518D7E900C3BE94 /* AMFUnarchiver.m in Sources */,
+				E18CE4571518D7E900C3BE94 /* ASObject.h in Sources */,
+				E18CE4581518D7E900C3BE94 /* ASObject.m in Sources */,
+				E18CE4591518D7E900C3BE94 /* CocoaAMF.h in Sources */,
+				E18CE45A1518D7E900C3BE94 /* FlexDataTypes.h in Sources */,
+				E18CE45B1518D7E900C3BE94 /* FlexDataTypes.m in Sources */,
+				E18CE45C1518D7E900C3BE94 /* NSInvocation-AMFExtensions.h in Sources */,
+				E18CE45D1518D7E900C3BE94 /* NSInvocation-AMFExtensions.m in Sources */,
+				E18CE45E1518D7E900C3BE94 /* NSObject-AMFExtensions.h in Sources */,
+				E18CE45F1518D7E900C3BE94 /* NSObject-AMFExtensions.m in Sources */,
+				E18CE4601518D7E900C3BE94 /* NSObject-iPhoneExtensions.h in Sources */,
+				E18CE4611518D7E900C3BE94 /* NSObject-iPhoneExtensions.m in Sources */,
+				E18CE4621518D7E900C3BE94 /* SODeserializer.h in Sources */,
+				E18CE4631518D7E900C3BE94 /* SODeserializer.m in Sources */,
+				E18CE46D1518DB3400C3BE94 /* AsyncSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E18CE4091518D54700C3BE94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E18CE40A1518D54700C3BE94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E18CE40C1518D54700C3BE94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/cocoa_amf.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cocoa-amf-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E18CE40D1518D54700C3BE94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/cocoa_amf.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cocoa-amf-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E18CE3F81518D54700C3BE94 /* Build configuration list for PBXProject "cocoa-amf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18CE4091518D54700C3BE94 /* Debug */,
+				E18CE40A1518D54700C3BE94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E18CE40B1518D54700C3BE94 /* Build configuration list for PBXNativeTarget "cocoa-amf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18CE40C1518D54700C3BE94 /* Debug */,
+				E18CE40D1518D54700C3BE94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E18CE3F51518D54700C3BE94 /* Project object */;
+}
