@@ -74,6 +74,7 @@ static uint32_t g_responseCount = 1;
 	[m_arguments release];
 	[m_error release];
 	[m_amfHeaders release];
+    [m_callback release];
 	[super dealloc];
 }
 
