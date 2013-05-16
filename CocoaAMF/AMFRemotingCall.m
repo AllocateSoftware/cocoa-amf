@@ -221,13 +221,29 @@ static uint32_t g_responseCount = 1;
 		AMFActionMessage *message = [[AMFActionMessage alloc] initWithData:m_receivedData];
 		NSObject *data = [[message.bodies objectAtIndex:0] data];
         
-        if( m_callback )
+        NSObject *obj = nil;
+        if([data isKindOfClass:[NSDictionary class]])
         {
-            m_callback(data);
+            obj = [(NSDictionary *)data objectForKey:@"code"];
         }
-        
-		objc_msgSend(m_delegate, @selector(remotingCallDidFinishLoading:receivedObject:), 
-			self, data);
+        if( obj != nil && [(NSString*)obj isEqualToString:@"PlatformRuntimeException" ])
+        {
+            m_error = [[NSError errorWithDomain:kAMFRemotingCallErrorDomain
+                                           code:kAMFInvalidResponseErrorCode userInfo:[NSDictionary dictionaryWithObject:
+                                                                                       [(NSDictionary *)data objectForKey:@"message"] forKey:NSLocalizedDescriptionKey]] retain];
+            objc_msgSend(m_delegate, @selector(remotingCall:didFailWithError:), self, m_error);
+        }
+        else
+        {
+            
+            if( m_callback )
+            {
+                m_callback(data);
+            }
+            
+            objc_msgSend(m_delegate, @selector(remotingCallDidFinishLoading:receivedObject:),
+                         self, data);
+        }
 		[message release];
 	}
 	[self _cleanup];
