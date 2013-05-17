@@ -226,7 +226,7 @@ static uint32_t g_responseCount = 1;
         {
             obj = [(NSDictionary *)data objectForKey:@"code"];
         }
-        if( obj != nil && [(NSString*)obj isEqualToString:@"PlatformRuntimeException" ])
+        if( obj != nil && ([(NSString*)obj isEqualToString:@"PlatformRuntimeException" ] || [(NSString*)obj isEqualToString:@"Error" ] ))
         {
             m_error = [[NSError errorWithDomain:kAMFRemotingCallErrorDomain
                                            code:kAMFInvalidResponseErrorCode userInfo:[NSDictionary dictionaryWithObject:
