@@ -37,7 +37,7 @@
 
 - (id)initWithData:(NSData *)data
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		[self _applyData:data];
 	}
@@ -46,7 +46,7 @@
 
 - (id)initWithDataUsingDebugUnarchiver:(NSData *)data
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		m_useDebugUnarchiver = YES;
 		[self _applyData:data];
@@ -232,7 +232,7 @@
 
 - (id)init
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		m_name = nil;
 		m_mustUnderstand = NO;
@@ -273,7 +273,7 @@
 
 - (id)init
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		m_targetURI = nil;
 		m_responseURI = nil;

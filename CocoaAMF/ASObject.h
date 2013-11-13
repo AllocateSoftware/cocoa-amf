@@ -6,6 +6,10 @@
 //  Copyright 2008 nesiumdotcom. All rights reserved.
 //
 
+#ifndef __ASOBJECT_H__
+#define __ASOBJECT_H__
+
+
 #import <Foundation/Foundation.h>
 
 
@@ -26,3 +30,6 @@
 - (NSUInteger)count;
 
 @end
+
+
+#endif

@@ -6,6 +6,10 @@
 //  Copyright 2009 nesiumdotcom. All rights reserved.
 //
 
+#ifndef __NSINVOCATION_AMFEXTENSIONS_H__
+#define __NSINVOCATION_AMFEXTENSIONS_H__
+
+
 #import <Foundation/Foundation.h>
 
 
@@ -14,3 +18,6 @@
 - (id)returnValueAsObject;
 
 @end
+
+
+#endif

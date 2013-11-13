@@ -204,7 +204,8 @@ static uint32_t g_responseCount = 1;
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-	if (!m_error && [m_receivedData length] == 0)
+	NSLog([NSString stringWithFormat:@"---: %@.%@", m_service, m_method]);
+    if (!m_error && [m_receivedData length] == 0)
 	{
 		m_error = [[NSError errorWithDomain:kAMFRemotingCallErrorDomain 
 			code:kAMFInvalidResponseErrorCode userInfo:[NSDictionary dictionaryWithObject:
@@ -222,7 +223,9 @@ static uint32_t g_responseCount = 1;
         
         if( m_callback )
         {
+            NSLog([NSString stringWithFormat:@"---> %@.%@", m_service, m_method]);
             m_callback(data);
+            
         }
         
 		objc_msgSend(m_delegate, @selector(remotingCallDidFinishLoading:receivedObject:), 

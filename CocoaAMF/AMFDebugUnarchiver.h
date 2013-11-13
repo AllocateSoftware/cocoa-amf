@@ -6,6 +6,10 @@
 //  Copyright 2009 nesiumdotcom. All rights reserved.
 //
 
+#ifndef __AMFDEBUGUNARCHIVER_H__
+#define __AMFDEBUGUNARCHIVER_H__
+
+
 #import <Foundation/Foundation.h>
 #import "AMF.h"
 #import "AMFUnarchiver.h"
@@ -47,3 +51,6 @@
 - (BOOL)hasChildren;
 - (NSUInteger)numChildren;
 @end
+
+
+#endif

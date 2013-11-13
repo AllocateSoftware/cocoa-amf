@@ -6,12 +6,17 @@
 //  Copyright 2009 nesiumdotcom. All rights reserved.
 //
 
+#ifndef __FLEXDATATYPES_H__
+#define __FLEXDATATYPES_H__
+
+
 #import <Foundation/Foundation.h>
+
 #import "NSObject-AMFExtensions.h"
+
 #if TARGET_OS_IPHONE
 #import "NSObject-iPhoneExtensions.h"
 #endif
-
 typedef enum _FlexCommandMessageOperationType
 {
 	kFlexCommandMessageSubscribeOperation = 0, 
@@ -119,3 +124,6 @@ typedef enum _FlexCommandMessageOperationType
 @property (nonatomic, retain) NSString *operation;
 @property (nonatomic, retain) NSString *source;
 @end
+
+
+#endif
