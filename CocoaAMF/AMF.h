@@ -7,6 +7,10 @@
  *
  */
 
+#ifndef __AMF_H__
+#define __AMF_H__
+
+
 #import <Foundation/Foundation.h>
 
 typedef enum _AMFVersion
@@ -82,3 +86,5 @@ typedef enum _AMFErrorCode
 	kAMFErrorArgumentMismatch = 4,
 	kAMFErrorInvalidArguments = 5
 } AMFErrorCode;
+
+#endif

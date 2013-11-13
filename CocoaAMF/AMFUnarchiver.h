@@ -6,6 +6,10 @@
 //  Copyright 2008 nesiumdotcom. All rights reserved.
 //
 
+#ifndef __AMFUNARCHIVER_H__
+#define __AMFUNARCHIVER_H__
+
+
 #import <Foundation/Foundation.h>
 #import "AMF.h"
 #import "ASObject.h"
@@ -117,3 +121,6 @@
 
 - (void)addProperty:(NSString *)property;
 @end
+
+
+#endif

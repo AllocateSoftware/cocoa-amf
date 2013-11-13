@@ -6,6 +6,10 @@
 //  Copyright 2008 nesiumdotcom. All rights reserved.
 //
 
+#ifndef __AMFACTIONMESSAGE_H__
+#define __AMFACTIONMESSAGE_H__
+
+
 #import <Foundation/Foundation.h>
 #import "AMF.h"
 #import "AMFArchiver.h"
@@ -65,3 +69,6 @@
 @property (nonatomic, retain) NSString *responseURI;
 @property (nonatomic, retain) NSObject *data;
 @end
+
+
+#endif

@@ -7,7 +7,7 @@
 //
 
 #import "NSObject-AMFExtensions.h"
-
+#import "NSObject-iPhoneExtensions.h"
 
 @implementation NSObject (AMFExtensions)
 

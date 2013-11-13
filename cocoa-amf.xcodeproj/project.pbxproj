@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E118C99D1833BCC200C97E9D /* GDSAbstractEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C9831833BCC200C97E9D /* GDSAbstractEvent.h */; };
+		E118C99E1833BCC200C97E9D /* GDSAbstractEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C9841833BCC200C97E9D /* GDSAbstractEvent.m */; };
+		E118C99F1833BCC200C97E9D /* GDSAsyncResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C9851833BCC200C97E9D /* GDSAsyncResponder.h */; };
+		E118C9A01833BCC200C97E9D /* GDSAsyncResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C9861833BCC200C97E9D /* GDSAsyncResponder.m */; };
+		E118C9A11833BCC200C97E9D /* GDSAsyncToken.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C9871833BCC200C97E9D /* GDSAsyncToken.h */; };
+		E118C9A21833BCC200C97E9D /* GDSAsyncToken.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C9881833BCC200C97E9D /* GDSAsyncToken.m */; };
+		E118C9A31833BCC200C97E9D /* GDSChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C9891833BCC200C97E9D /* GDSChannel.h */; };
+		E118C9A41833BCC200C97E9D /* GDSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C98A1833BCC200C97E9D /* GDSChannel.m */; };
+		E118C9A51833BCC200C97E9D /* GDSChannelNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C98B1833BCC200C97E9D /* GDSChannelNotification.h */; };
+		E118C9A61833BCC200C97E9D /* GDSChannelNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C98C1833BCC200C97E9D /* GDSChannelNotification.m */; };
+		E118C9A71833BCC200C97E9D /* GDSConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C98D1833BCC200C97E9D /* GDSConfiguration.h */; };
+		E118C9A81833BCC200C97E9D /* GDSConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C98E1833BCC200C97E9D /* GDSConfiguration.m */; };
+		E118C9A91833BCC200C97E9D /* GDSFaultEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C98F1833BCC200C97E9D /* GDSFaultEvent.h */; };
+		E118C9AA1833BCC200C97E9D /* GDSFaultEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C9901833BCC200C97E9D /* GDSFaultEvent.m */; };
+		E118C9AB1833BCC200C97E9D /* GDSPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C9911833BCC200C97E9D /* GDSPersistence.h */; };
+		E118C9AC1833BCC200C97E9D /* GDSPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C9921833BCC200C97E9D /* GDSPersistence.m */; };
+		E118C9AD1833BCC200C97E9D /* GDSRemoteObject.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C9931833BCC200C97E9D /* GDSRemoteObject.h */; };
+		E118C9AE1833BCC200C97E9D /* GDSRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C9941833BCC200C97E9D /* GDSRemoteObject.m */; };
+		E118C9AF1833BCC200C97E9D /* GDSRemoteProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C9951833BCC200C97E9D /* GDSRemoteProtocols.h */; };
+		E118C9B01833BCC200C97E9D /* GDSResultEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C9961833BCC200C97E9D /* GDSResultEvent.h */; };
+		E118C9B11833BCC200C97E9D /* GDSResultEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C9971833BCC200C97E9D /* GDSResultEvent.m */; };
+		E118C9B21833BCC200C97E9D /* GDSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C9981833BCC200C97E9D /* GDSUtil.h */; };
+		E118C9B31833BCC200C97E9D /* GDSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C9991833BCC200C97E9D /* GDSUtil.m */; };
+		E118C9B41833BCC200C97E9D /* GDSXAMFRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C99A1833BCC200C97E9D /* GDSXAMFRequest.h */; };
+		E118C9B51833BCC200C97E9D /* GDSXAMFRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E118C99B1833BCC200C97E9D /* GDSXAMFRequest.m */; };
+		E118C9B61833BCC200C97E9D /* GraniteDS.h in Headers */ = {isa = PBXBuildFile; fileRef = E118C99C1833BCC200C97E9D /* GraniteDS.h */; };
 		E18CE4021518D54700C3BE94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18CE4011518D54700C3BE94 /* Foundation.framework */; };
 		E18CE4471518D7E900C3BE94 /* AMF.h in Sources */ = {isa = PBXBuildFile; fileRef = E18CE42A1518D7E900C3BE94 /* AMF.h */; };
 		E18CE4481518D7E900C3BE94 /* AMF.m in Sources */ = {isa = PBXBuildFile; fileRef = E18CE42B1518D7E900C3BE94 /* AMF.m */; };
@@ -43,6 +69,32 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E118C9831833BCC200C97E9D /* GDSAbstractEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSAbstractEvent.h; path = CocoaAMF/GDSAbstractEvent.h; sourceTree = "<group>"; };
+		E118C9841833BCC200C97E9D /* GDSAbstractEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSAbstractEvent.m; path = CocoaAMF/GDSAbstractEvent.m; sourceTree = "<group>"; };
+		E118C9851833BCC200C97E9D /* GDSAsyncResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSAsyncResponder.h; path = CocoaAMF/GDSAsyncResponder.h; sourceTree = "<group>"; };
+		E118C9861833BCC200C97E9D /* GDSAsyncResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSAsyncResponder.m; path = CocoaAMF/GDSAsyncResponder.m; sourceTree = "<group>"; };
+		E118C9871833BCC200C97E9D /* GDSAsyncToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSAsyncToken.h; path = CocoaAMF/GDSAsyncToken.h; sourceTree = "<group>"; };
+		E118C9881833BCC200C97E9D /* GDSAsyncToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSAsyncToken.m; path = CocoaAMF/GDSAsyncToken.m; sourceTree = "<group>"; };
+		E118C9891833BCC200C97E9D /* GDSChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSChannel.h; path = CocoaAMF/GDSChannel.h; sourceTree = "<group>"; };
+		E118C98A1833BCC200C97E9D /* GDSChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSChannel.m; path = CocoaAMF/GDSChannel.m; sourceTree = "<group>"; };
+		E118C98B1833BCC200C97E9D /* GDSChannelNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSChannelNotification.h; path = CocoaAMF/GDSChannelNotification.h; sourceTree = "<group>"; };
+		E118C98C1833BCC200C97E9D /* GDSChannelNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSChannelNotification.m; path = CocoaAMF/GDSChannelNotification.m; sourceTree = "<group>"; };
+		E118C98D1833BCC200C97E9D /* GDSConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSConfiguration.h; path = CocoaAMF/GDSConfiguration.h; sourceTree = "<group>"; };
+		E118C98E1833BCC200C97E9D /* GDSConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSConfiguration.m; path = CocoaAMF/GDSConfiguration.m; sourceTree = "<group>"; };
+		E118C98F1833BCC200C97E9D /* GDSFaultEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSFaultEvent.h; path = CocoaAMF/GDSFaultEvent.h; sourceTree = "<group>"; };
+		E118C9901833BCC200C97E9D /* GDSFaultEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSFaultEvent.m; path = CocoaAMF/GDSFaultEvent.m; sourceTree = "<group>"; };
+		E118C9911833BCC200C97E9D /* GDSPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSPersistence.h; path = CocoaAMF/GDSPersistence.h; sourceTree = "<group>"; };
+		E118C9921833BCC200C97E9D /* GDSPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSPersistence.m; path = CocoaAMF/GDSPersistence.m; sourceTree = "<group>"; };
+		E118C9931833BCC200C97E9D /* GDSRemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSRemoteObject.h; path = CocoaAMF/GDSRemoteObject.h; sourceTree = "<group>"; };
+		E118C9941833BCC200C97E9D /* GDSRemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSRemoteObject.m; path = CocoaAMF/GDSRemoteObject.m; sourceTree = "<group>"; };
+		E118C9951833BCC200C97E9D /* GDSRemoteProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSRemoteProtocols.h; path = CocoaAMF/GDSRemoteProtocols.h; sourceTree = "<group>"; };
+		E118C9961833BCC200C97E9D /* GDSResultEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSResultEvent.h; path = CocoaAMF/GDSResultEvent.h; sourceTree = "<group>"; };
+		E118C9971833BCC200C97E9D /* GDSResultEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSResultEvent.m; path = CocoaAMF/GDSResultEvent.m; sourceTree = "<group>"; };
+		E118C9981833BCC200C97E9D /* GDSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSUtil.h; path = CocoaAMF/GDSUtil.h; sourceTree = "<group>"; };
+		E118C9991833BCC200C97E9D /* GDSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSUtil.m; path = CocoaAMF/GDSUtil.m; sourceTree = "<group>"; };
+		E118C99A1833BCC200C97E9D /* GDSXAMFRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDSXAMFRequest.h; path = CocoaAMF/GDSXAMFRequest.h; sourceTree = "<group>"; };
+		E118C99B1833BCC200C97E9D /* GDSXAMFRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDSXAMFRequest.m; path = CocoaAMF/GDSXAMFRequest.m; sourceTree = "<group>"; };
+		E118C99C1833BCC200C97E9D /* GraniteDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraniteDS.h; path = CocoaAMF/GraniteDS.h; sourceTree = "<group>"; };
 		E18CE3FE1518D54700C3BE94 /* libcocoa-amf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcocoa-amf.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18CE4011518D54700C3BE94 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E18CE42A1518D7E900C3BE94 /* AMF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMF.h; path = CocoaAMF/AMF.h; sourceTree = "<group>"; };
@@ -96,6 +148,32 @@
 		E18CE3F31518D54700C3BE94 = {
 			isa = PBXGroup;
 			children = (
+				E118C9831833BCC200C97E9D /* GDSAbstractEvent.h */,
+				E118C9841833BCC200C97E9D /* GDSAbstractEvent.m */,
+				E118C9851833BCC200C97E9D /* GDSAsyncResponder.h */,
+				E118C9861833BCC200C97E9D /* GDSAsyncResponder.m */,
+				E118C9871833BCC200C97E9D /* GDSAsyncToken.h */,
+				E118C9881833BCC200C97E9D /* GDSAsyncToken.m */,
+				E118C9891833BCC200C97E9D /* GDSChannel.h */,
+				E118C98A1833BCC200C97E9D /* GDSChannel.m */,
+				E118C98B1833BCC200C97E9D /* GDSChannelNotification.h */,
+				E118C98C1833BCC200C97E9D /* GDSChannelNotification.m */,
+				E118C98D1833BCC200C97E9D /* GDSConfiguration.h */,
+				E118C98E1833BCC200C97E9D /* GDSConfiguration.m */,
+				E118C98F1833BCC200C97E9D /* GDSFaultEvent.h */,
+				E118C9901833BCC200C97E9D /* GDSFaultEvent.m */,
+				E118C9911833BCC200C97E9D /* GDSPersistence.h */,
+				E118C9921833BCC200C97E9D /* GDSPersistence.m */,
+				E118C9931833BCC200C97E9D /* GDSRemoteObject.h */,
+				E118C9941833BCC200C97E9D /* GDSRemoteObject.m */,
+				E118C9951833BCC200C97E9D /* GDSRemoteProtocols.h */,
+				E118C9961833BCC200C97E9D /* GDSResultEvent.h */,
+				E118C9971833BCC200C97E9D /* GDSResultEvent.m */,
+				E118C9981833BCC200C97E9D /* GDSUtil.h */,
+				E118C9991833BCC200C97E9D /* GDSUtil.m */,
+				E118C99A1833BCC200C97E9D /* GDSXAMFRequest.h */,
+				E118C99B1833BCC200C97E9D /* GDSXAMFRequest.m */,
+				E118C99C1833BCC200C97E9D /* GraniteDS.h */,
 				E18CE4671518DB3400C3BE94 /* CocoaAsyncSocket */,
 				E18CE4641518D8E000C3BE94 /* cocoa-amf-Prefix.pch */,
 				E18CE42A1518D7E900C3BE94 /* AMF.h */,
@@ -167,8 +245,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E118C99D1833BCC200C97E9D /* GDSAbstractEvent.h in Headers */,
+				E118C9AD1833BCC200C97E9D /* GDSRemoteObject.h in Headers */,
+				E118C9B61833BCC200C97E9D /* GraniteDS.h in Headers */,
 				E18CE4651518D8E000C3BE94 /* cocoa-amf-Prefix.pch in Headers */,
+				E118C9B21833BCC200C97E9D /* GDSUtil.h in Headers */,
 				E18CE46C1518DB3400C3BE94 /* AsyncSocket.h in Headers */,
+				E118C9B01833BCC200C97E9D /* GDSResultEvent.h in Headers */,
+				E118C9A11833BCC200C97E9D /* GDSAsyncToken.h in Headers */,
+				E118C9A51833BCC200C97E9D /* GDSChannelNotification.h in Headers */,
+				E118C9AB1833BCC200C97E9D /* GDSPersistence.h in Headers */,
+				E118C99F1833BCC200C97E9D /* GDSAsyncResponder.h in Headers */,
+				E118C9B41833BCC200C97E9D /* GDSXAMFRequest.h in Headers */,
+				E118C9A71833BCC200C97E9D /* GDSConfiguration.h in Headers */,
+				E118C9AF1833BCC200C97E9D /* GDSRemoteProtocols.h in Headers */,
+				E118C9A91833BCC200C97E9D /* GDSFaultEvent.h in Headers */,
+				E118C9A31833BCC200C97E9D /* GDSChannel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,10 +317,16 @@
 			files = (
 				E18CE4471518D7E900C3BE94 /* AMF.h in Sources */,
 				E18CE4481518D7E900C3BE94 /* AMF.m in Sources */,
+				E118C9B51833BCC200C97E9D /* GDSXAMFRequest.m in Sources */,
+				E118C9B31833BCC200C97E9D /* GDSUtil.m in Sources */,
+				E118C9AC1833BCC200C97E9D /* GDSPersistence.m in Sources */,
 				E18CE4491518D7E900C3BE94 /* AMFActionMessage.h in Sources */,
+				E118C9A21833BCC200C97E9D /* GDSAsyncToken.m in Sources */,
+				E118C9AA1833BCC200C97E9D /* GDSFaultEvent.m in Sources */,
 				E18CE44A1518D7E900C3BE94 /* AMFActionMessage.m in Sources */,
 				E18CE44B1518D7E900C3BE94 /* AMFArchiver.h in Sources */,
 				E18CE44C1518D7E900C3BE94 /* AMFArchiver.m in Sources */,
+				E118C9A81833BCC200C97E9D /* GDSConfiguration.m in Sources */,
 				E18CE44D1518D7E900C3BE94 /* AMFDebugUnarchiver.h in Sources */,
 				E18CE44E1518D7E900C3BE94 /* AMFDebugUnarchiver.m in Sources */,
 				E18CE44F1518D7E900C3BE94 /* AMFDuplexGateway.h in Sources */,
@@ -236,12 +334,17 @@
 				E18CE4511518D7E900C3BE94 /* AMFGateway.h in Sources */,
 				E18CE4521518D7E900C3BE94 /* AMFGateway.m in Sources */,
 				E18CE4531518D7E900C3BE94 /* AMFRemotingCall.h in Sources */,
+				E118C9A61833BCC200C97E9D /* GDSChannelNotification.m in Sources */,
+				E118C9B11833BCC200C97E9D /* GDSResultEvent.m in Sources */,
 				E18CE4541518D7E900C3BE94 /* AMFRemotingCall.m in Sources */,
 				E18CE4551518D7E900C3BE94 /* AMFUnarchiver.h in Sources */,
 				E18CE4561518D7E900C3BE94 /* AMFUnarchiver.m in Sources */,
 				E18CE4571518D7E900C3BE94 /* ASObject.h in Sources */,
 				E18CE4581518D7E900C3BE94 /* ASObject.m in Sources */,
 				E18CE4591518D7E900C3BE94 /* CocoaAMF.h in Sources */,
+				E118C9A41833BCC200C97E9D /* GDSChannel.m in Sources */,
+				E118C99E1833BCC200C97E9D /* GDSAbstractEvent.m in Sources */,
+				E118C9AE1833BCC200C97E9D /* GDSRemoteObject.m in Sources */,
 				E18CE45A1518D7E900C3BE94 /* FlexDataTypes.h in Sources */,
 				E18CE45B1518D7E900C3BE94 /* FlexDataTypes.m in Sources */,
 				E18CE45C1518D7E900C3BE94 /* NSInvocation-AMFExtensions.h in Sources */,
@@ -250,6 +353,7 @@
 				E18CE45F1518D7E900C3BE94 /* NSObject-AMFExtensions.m in Sources */,
 				E18CE4601518D7E900C3BE94 /* NSObject-iPhoneExtensions.h in Sources */,
 				E18CE4611518D7E900C3BE94 /* NSObject-iPhoneExtensions.m in Sources */,
+				E118C9A01833BCC200C97E9D /* GDSAsyncResponder.m in Sources */,
 				E18CE4621518D7E900C3BE94 /* SODeserializer.h in Sources */,
 				E18CE4631518D7E900C3BE94 /* SODeserializer.m in Sources */,
 				E18CE46D1518DB3400C3BE94 /* AsyncSocket.m in Sources */,

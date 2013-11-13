@@ -7,6 +7,7 @@
 //
 
 #import "AMFUnarchiver.h"
+#import <objc/runtime.h>
 
 
 @interface AMFUnarchiver (Protected)
@@ -85,7 +86,7 @@ static uint16_t g_options = 0;
 
 - (id)initForReadingWithData:(NSData *)data
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		m_data = [data retain];
 		m_bytes = [data bytes];
@@ -492,6 +493,8 @@ static uint16_t g_options = 0;
 		{
 			if (!(cls = objc_getClass([className cStringUsingEncoding:NSUTF8StringEncoding])))
 			{
+                if ([object isExternalizable])
+                    [NSException raise:@"AMFExternalizableClassNotFoundException" format:@"Could not find class for externalized data: %@", className];
 				return object;
 			}
 		}
@@ -559,7 +562,7 @@ static uint16_t g_options = 0;
 
 - (id)initForReadingWithData:(NSData *)data
 {
-	if (self = [super initForReadingWithData:data])
+	if ((self = [super initForReadingWithData:data]))
 	{
 		m_objectEncoding = kAMF0Version;
 	}
@@ -801,7 +804,7 @@ static uint16_t g_options = 0;
 
 - (id)initForReadingWithData:(NSData *)data
 {
-	if (self = [super initForReadingWithData:data])
+	if ((self = [super initForReadingWithData:data]))
 	{
 		m_stringTable = [[NSMutableArray alloc] init];
 		m_traitsTable = [[NSMutableArray alloc] init];
@@ -1147,7 +1150,7 @@ static uint16_t g_options = 0;
 
 - (id)init
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		m_properties = [[NSMutableArray alloc] init];
 		m_dynamic = NO;

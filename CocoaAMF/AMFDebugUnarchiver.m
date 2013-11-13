@@ -85,7 +85,7 @@
 
 - (id)init
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		children = nil;
 	}

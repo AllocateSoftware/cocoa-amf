@@ -79,7 +79,7 @@ static uint16_t g_options = 0;
 
 - (id)init
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		m_data = [[NSMutableData alloc] init];
 		m_position = 0;
@@ -105,7 +105,7 @@ static uint16_t g_options = 0;
 
 - (id)initForWritingWithMutableData:(NSMutableData *)data
 {
-	if (self = [self init])
+	if ((self = [self init]))
 	{
 		[data retain];
 		[m_data release];
@@ -831,7 +831,7 @@ not allow externalizable objects (non-keyed archiving)!"];
 
 - (id)init
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		m_stringTable = [[NSMutableArray alloc] init];
 		m_traitsTable = [[NSMutableArray alloc] init];

@@ -20,7 +20,7 @@
 
 - (id)initWithSource:(NSArray *)obj
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		self.source = obj;
 	}
@@ -29,7 +29,7 @@
 
 - (id)initWithCoder:(NSCoder *)coder
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		self.source = [coder decodeObject];
 	}
@@ -80,7 +80,7 @@
 
 - (id)initWithObject:(NSObject *)obj
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		self.object = obj;
 	}
@@ -89,7 +89,7 @@
 
 - (id)initWithCoder:(NSCoder *)coder
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		self.object = [coder decodeObject];
 	}
@@ -129,7 +129,7 @@
 
 - (id)init
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		self.messageId = [NSObject uuid];
 		self.clientId = [NSObject uuid];
@@ -140,7 +140,7 @@
 
 - (id)initWithCoder:(NSCoder *)coder
 {
-	if (self = [super init])
+	if ((self = [super init]))
 	{
 		self.body = [coder decodeObjectForKey:@"body"];
 		self.clientId = [coder decodeObjectForKey:@"clientId"];
@@ -198,7 +198,7 @@ timeToLive: %f, timestamp: %f,\nheaders:\n%@,\nbody:\n%@", [self className], (lo
 
 - (id)initWithCoder:(NSCoder *)coder
 {
-	if (self = [super initWithCoder:coder])
+	if ((self = [super initWithCoder:coder]))
 	{
 		self.correlationId = [coder decodeObjectForKey:@"correlationId"];
 	}
@@ -235,7 +235,7 @@ timeToLive: %f, timestamp: %f,\nheaders:\n%@,\nbody:\n%@", [self className], (lo
 
 - (id)initWithCoder:(NSCoder *)coder
 {
-	if (self = [super initWithCoder:coder])
+	if ((self = [super initWithCoder:coder]))
 	{
 		self.operation = [coder decodeIntForKey:@"operation"];
 	}
@@ -288,7 +288,7 @@ timeToLive: %f, timestamp: %f,\nheaders:\n%@,\nbody:\n%@", [self className], (lo
 
 - (id)initWithCoder:(NSCoder *)coder
 {
-	if (self = [super initWithCoder:coder])
+	if ((self = [super initWithCoder:coder]))
 	{
 		self.extendedData = [coder decodeObjectForKey:@"extendedData"];
 		self.faultCode = [coder decodeObjectForKey:@"faultCode"];
@@ -342,7 +342,7 @@ timeToLive: %f, timestamp: %f,\nheaders:\n%@,\nbody:\n%@", [self className], (lo
 
 - (id)initWithCoder:(NSCoder *)coder
 {
-	if (self = [super initWithCoder:coder])
+	if ((self = [super initWithCoder:coder]))
 	{
 		self.operation = [coder decodeObjectForKey:@"operation"];
 		self.source = [coder decodeObjectForKey:@"source"];
