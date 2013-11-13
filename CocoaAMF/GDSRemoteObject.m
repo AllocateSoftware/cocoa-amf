@@ -34,6 +34,7 @@
 #import "FlexDataTypes.h"
 #import "GDSAsyncToken.h"
 
+
 @implementation GDSRemoteObject
 
 #pragma mark -
@@ -125,6 +126,12 @@
 -(void)callMethod:(NSString *)method arguments:(NSArray *)arguments target:(id)target result:(SEL)result fault:(SEL)fault
 {
     GDSAsyncResponder *responder = [GDSAsyncResponder responderWithTarget:target result:result fault:fault];
+    [self callMethod:method arguments:arguments responders:[NSArray arrayWithObject:responder]];
+}
+
+- (void)callMethod:(NSString *)method arguments:(NSArray *)arguments result:(void(^)(GDSResultEvent*)) result fault:(void(^)(GDSFaultEvent*)) fault
+{
+    GDSAsyncResponder *responder = [GDSAsyncResponder responderWithResult:result fault:fault];
     [self callMethod:method arguments:arguments responders:[NSArray arrayWithObject:responder]];
 }
 

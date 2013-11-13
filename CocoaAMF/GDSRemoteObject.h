@@ -99,6 +99,11 @@
              fault:(SEL)fault;
 
 - (void)callMethod:(NSString *)method
+         arguments:(NSArray *)arguments
+            result:(void(^)(GDSResultEvent*)) result
+             fault:(void(^)(GDSFaultEvent*)) fault;
+
+- (void)callMethod:(NSString *)method
          responder:(GDSAsyncResponder *)responder;
 
 - (void)callMethod:(NSString *)method

@@ -31,7 +31,7 @@
 #import "GDSAsyncResponder.h"
 
 #import "GDSResultEvent.h"
-
+#import "GDSFaultEvent.h"
 
 @implementation GDSAsyncResponder
 
@@ -41,6 +41,8 @@
 @synthesize target=m_target;
 @synthesize result=m_result;
 @synthesize fault=m_fault;
+@synthesize resultCallback=m_resultCallback;
+@synthesize faultCallback=m_faultCallback;
 
 #pragma mark -
 #pragma mark Initialization & Deallocation
@@ -48,6 +50,11 @@
 + (id)responderWithTarget:(id)target result:(SEL)result fault:(SEL)fault
 {
     return [[[GDSAsyncResponder alloc] initWithTarget:target result:result fault:fault] autorelease];
+}
+
++ (id)responderWithResult:(void(^)(GDSResultEvent*))result fault:(void(^)(GDSFaultEvent*)) fault
+{
+    return [[[GDSAsyncResponder alloc] initWithResult:result fault:fault] autorelease];
 }
 
 - (id)initWithTarget:(id)target result:(SEL)result fault:(SEL)fault
@@ -66,6 +73,22 @@
     return self;
 }
 
+- (id)initWithResult:(void(^)(GDSResultEvent*)) result fault:(void(^)(GDSFaultEvent*)) fault
+{
+    if (result == nil)
+        @throw [NSException exceptionWithName:NSInvalidArgumentException
+                                       reason:@"Parameters result cannot be null"
+                                     userInfo:nil];
+    
+    if ((self = [self init]))
+    {
+        self.resultCallback = result;
+        self.faultCallback = fault;
+    }
+    return self;
+}
+
+
 - (void)dealloc
 {
     [m_target release];
@@ -78,10 +101,19 @@
 
 - (void)callWithEvent:(GDSAbstractEvent *)event;
 {
-    if ([event isKindOfClass:[GDSResultEvent class]])
-        [m_target performSelector:m_result withObject:event];
-    else if (m_fault != nil)
-        [m_target performSelector:m_fault withObject:event];
+    if ([event isKindOfClass:[GDSResultEvent class]]) {
+        if( m_target == nil) {
+            m_resultCallback((GDSResultEvent*)event);
+        } else {
+            [m_target performSelector:m_result withObject:event];
+        }
+    }
+    else {
+        if( m_faultCallback != nil )
+            m_faultCallback((GDSFaultEvent*)event);
+        if (m_fault != nil)
+            [m_target performSelector:m_fault withObject:event];
+    }
 }
 
 @end

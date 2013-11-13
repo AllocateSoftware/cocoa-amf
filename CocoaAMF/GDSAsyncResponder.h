@@ -33,6 +33,8 @@
 #import <Foundation/Foundation.h>
 
 @class GDSAbstractEvent;
+@class GDSResultEvent;
+@class GDSFaultEvent;
 
 
 /**
@@ -45,6 +47,9 @@
     id m_target;
     SEL m_result;
     SEL m_fault;
+    
+    void (^m_resultCallback)(GDSResultEvent*);
+    void (^m_faultCallback)(GDSFaultEvent*);
 }
 
 #pragma mark -
@@ -53,11 +58,14 @@
 @property (readonly) id target;
 @property (readonly) SEL result;
 @property (readonly) SEL fault;
+@property (readwrite, copy) void (^resultCallback)(GDSResultEvent*);
+@property (readwrite, copy) void (^faultCallback)(GDSFaultEvent*);
 
 #pragma mark -
 #pragma mark Initialization
 
 + (id)responderWithTarget:(id)target result:(SEL)result fault:(SEL)fault;
++ (id)responderWithResult:(void(^)(GDSResultEvent*)) result fault:(void(^)(GDSFaultEvent*)) fault;
 - (id)initWithTarget:(id)target result:(SEL)result fault:(SEL)fault;
 
 #pragma mark -
