@@ -801,7 +801,7 @@ not allow externalizable objects (non-keyed archiving)!"];
 
 - (void)_encodeNumber:(NSNumber *)value
 {
-	if ([[value className] isEqualToString:@"NSCFBoolean"])
+	if ([[value className] isEqualToString:@"__NSCFBoolean"])
 	{
 		[self encodeUnsignedChar:kAMF0BooleanType];
 		[self encodeBool:[value boolValue]];
@@ -991,7 +991,7 @@ not allow externalizable objects (non-keyed archiving)!"];
 
 - (void)_encodeNumber:(NSNumber *)value
 {
-	if ([[value className] isEqualToString:@"NSCFBoolean"])
+	if ([[value className] isEqualToString:@"__NSCFBoolean"])
 	{
 		[self encodeUnsignedChar:([value boolValue] ? kAMF3TrueType : kAMF3FalseType)];
 		return;
